@@ -113,14 +113,14 @@ label {
 #hidebadges,
 .hidden,
 
-#about,
+#me,
 #projects,
 #socials,
 #systems,
 #badges,
 
-#about-checkbox:checked~div .showabout,
-#about-checkbox:checked~div #home,
+#me-checkbox:checked~div .showme,
+#me-checkbox:checked~div #home,
 
 #projects-checkbox:checked~div .showprojects,
 #projects-checkbox:checked~div #home,
@@ -136,8 +136,8 @@ label {
     display: none;
 }
 
-#about-checkbox:checked~div .hideabout,
-#about-checkbox:checked~div #about,
+#me-checkbox:checked~div .hideme,
+#me-checkbox:checked~div #me,
 
 #projects-checkbox:checked~div .hideprojects,
 #projects-checkbox:checked~div #projects,
