@@ -22,6 +22,10 @@
             <div class="flicker" style="animation-delay: 0.2s">
                 <h1>puppygirlstink</h1>
                 <p class="indent gray">just a girl</p>
+<br>
+<p class="indent gray">my current time</p>
+
+                <div class="indent gray" id="time" class="time"></div>
             </div>
 
             <div class="flicker indent" style="animation-delay: 0.4s">
@@ -37,4 +41,23 @@
 
             <h3 class="flicker bottom" style="animation-delay: 1.6s">contact ~ <a href="https://www.discordapp.com/users/505764324690755598">discord</a></h3>
         </div>
+
+        <script>
+            function updateTime() {
+                const options = { 
+                    timeZone: 'Europe/London', 
+                    hour: '2-digit', 
+                    minute: '2-digit', 
+                    second: '2-digit',
+                    hour12: false // 24-hour format
+                };
+                const timeString = new Date().toLocaleString('en-US', options);
+                document.getElementById('time').textContent = timeString;
+            }
+    
+            // Update time every second
+            setInterval(updateTime, 1000);
+            updateTime(); // Initial call to display the time immediately
+        </script>
+
 </body>
