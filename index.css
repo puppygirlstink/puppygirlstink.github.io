@@ -47,6 +47,13 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.time {
+    font-size: 2em; 
+    text-align: left; 
+    margin-right: 20px; 
+    display: inline-block; 
+}
+
 .indent {
     padding-left: 1ch;
 }
@@ -91,7 +98,8 @@ body {
 
 .imagediv {
     display: flex;
-    margin: 0 !important;
+    align-items: center;
+    
 }
 
 h1 {
