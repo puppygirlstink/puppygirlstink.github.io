@@ -25,6 +25,7 @@
 body {
     background-color: black;
     color: white;
+    overflow-x: hidden;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -48,10 +49,10 @@ body {
 }
 
 .time {
-    font-size: 2em; 
-    text-align: left; 
-    margin-right: 20px; 
-    display: inline-block; 
+    font-size: 2em;
+    text-align: left;
+    margin-right: 20px;
+    display: inline-block;
 }
 
 .indent {

@@ -14,6 +14,7 @@
     <a class="flicker hideprojects pagelabel" href="index">> back</a>
     <div class="flicker centertop" style="animation-delay: 0.4s">
         <h1>music</h1>
+        <div class="indent gray" id="time" class="time"></div>
     </div>
 
 <div class="static center box" style="animation-delay: 0.8s">
@@ -44,6 +45,24 @@
         <p class="doubleindent gray">i dont have a subscription so i cant link but trust me</p>
 
 </div>
-</div>
+
+<script>
+    function updateTime() {
+        const options = { 
+            timeZone: 'America/New_York', 
+            hour: '2-digit', 
+            minute: '2-digit', 
+            second: '2-digit',
+            hour12: false // 24-hour format
+        };
+        const timeString = new Date().toLocaleString('en-US', options);
+        document.getElementById('time').textContent = timeString;
+    }
+
+    // Update time every second
+    setInterval(updateTime, 1000);
+    updateTime(); // Initial call to display the time immediately
+</script>
+
 </body>
 </html>
