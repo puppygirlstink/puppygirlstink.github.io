@@ -149,7 +149,7 @@ label {
 .hidden,
 
 #me,
-#projects,
+#music,
 #socials,
 #systems,
 #badges,
@@ -157,8 +157,8 @@ label {
 #me-checkbox:checked~div .showme,
 #me-checkbox:checked~div #home,
 
-#projects-checkbox:checked~div .showprojects,
-#projects-checkbox:checked~div #home,
+#music-checkbox:checked~div .showmusic,
+#music-checkbox:checked~div #home,
 
 #socials-checkbox:checked~div .showsocials,
 #socials-checkbox:checked~div #home,
@@ -174,8 +174,8 @@ label {
 #me-checkbox:checked~div .hideme,
 #me-checkbox:checked~div #me,
 
-#projects-checkbox:checked~div .hideprojects,
-#projects-checkbox:checked~div #projects,
+#music-checkbox:checked~div .hidemusic,
+#music-checkbox:checked~div #music,
 
 #socials-checkbox:checked~div .hidesocials,
 #socials-checkbox:checked~div #socials,
