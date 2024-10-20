@@ -1,80 +1,32 @@
 @font-face {
-    font-family: 'Chakra Petch';
-    src: url('./font/ChakraPetch-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Chakra Petch';
-    src: url('./font/ChakraPetch-SemiBold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Chakra Petch';
-    src: url('./font/ChakraPetch-MediumItalic.woff2') format('woff2');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Chakra Petch';
-    src: url('./font/ChakraPetch-Light.woff2') format('woff2');
+    font-family: 'Futura Std';
+    src: url('./font/FuturaStd-Light.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Chakra Petch';
-    src: url('./font/ChakraPetch-Regular.woff2') format('woff2');
-    font-weight: normal;
+    font-family: 'Futura Std';
+    src: url('./font/FuturaStd-Light.woff2') format('woff2');
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Chakra Petch';
-    src: url('./font/ChakraPetch-LightItalic.woff2') format('woff2');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Chakra Petch';
-    src: url('./font/ChakraPetch-Medium.woff2') format('woff2');
+    font-family: 'Futura Std';
+    src: url('./font/FuturaStd-Condensed.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Chakra Petch';
-    src: url('./font/ChakraPetch-Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Chakra Petch';
-    src: url('./font/ChakraPetch-SemiBoldItalic.woff2') format('woff2');
-    font-weight: 600;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Chakra Petch';
-    src: url('./font/ChakraPetch-BoldItalic.woff2') format('woff2');
-    font-weight: bold;
-    font-style: italic;
+    font-family: 'Futura Std';
+    src: url('./font/FuturaStd-Heavy.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
     font-display: swap;
 }
 
@@ -85,7 +37,7 @@ body {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    font-family: "Chakra Petch", monospace;
+    font-family: "Futura Std", monospace;
 }
 
 .center {
