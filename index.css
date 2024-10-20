@@ -1,6 +1,81 @@
 @font-face {
-    font-family: "Hack";
-    src: url("./font/hack.woff2");
+    font-family: 'Chakra Petch';
+    src: url('./font/ChakraPetch-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('./font/ChakraPetch-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('./font/ChakraPetch-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('./font/ChakraPetch-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('./font/ChakraPetch-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('./font/ChakraPetch-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('./font/ChakraPetch-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('./font/ChakraPetch-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('./font/ChakraPetch-SemiBoldItalic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('./font/ChakraPetch-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
 }
 
 body {
@@ -10,13 +85,21 @@ body {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    font-family: "Hack", monospace;
+    font-family: "Chakra Petch", monospace;
 }
 
 .center {
     position: fixed;
     top: 50%;
     left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.centertop {
+    position: fixed;
+    z-index: 100;
+    left: 33%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
@@ -169,6 +252,31 @@ label {
 
     50% {
         height: 0px;
+        width: 400px;
+    }
+
+    100% {
+        height: 600px;
+        width: 400px;
+    }
+}
+
+.static {
+    animation-name: static;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-timing-function: ease;
+}
+
+@keyframes static {
+    0% {
+        height: 600px;
+        width: 400px;
+    }
+
+    50% {
+        height: 600px;
         width: 400px;
     }
 
