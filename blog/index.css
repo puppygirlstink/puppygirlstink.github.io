@@ -40,6 +40,14 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.middle {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 .centertop {
     position: fixed;
     z-index: 100;

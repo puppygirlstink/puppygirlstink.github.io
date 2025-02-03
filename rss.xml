@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>puppygirlstink</title>
+        <description>
+            just a girl
+        </description>
+        <link>https://puppygirlstink.github.io/rss.xml</link>
+        <atom:link href="https://puppygirlstink.github.io/rss.xml" rel="self" type="application/rss+xml"/>
+        <ttl>1440</ttl>
+        <webMaster>puppygirlstink@gmail.com (puppygirlstink)</webMaster>
+        <lastBuildDate>
+            Mon, 03 Feb 2025 23:23:33 +0000
+        </lastBuildDate>
+        <language>en-us</language>
+<!-- RFC 2822 timestamp https://timestampgenerator.com/ -->
+
+<item>
+    <guid>https://puppygirlstink.github.io/blog/20250203.html</guid>
+    <title>blog!!!</title>
+    <description>
+    <![CDATA[
+<br>
+        hey guys, ive decided to make this blog because i have nothing better to do. i'm not really sure what it's going to really be, but i guess thats how my brain works so in that regard this is perfect.<br><br>
+
+        im kinda fucking stupid! so this probably won't be very good.<br><br> 
+
+        do you fuck with it... >< ?<br><br>
+
+    ]]>
+    </description>
+    <link>https://puppygirlstink.github.io/blog/20250203.html</link>
+    <pubDate>
+        Mon, 03 Feb 2025 23:23:33 +0000
+    </pubDate>
+</item>
+
+    </channel>
+</rss>
