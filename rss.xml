@@ -10,7 +10,7 @@
         <ttl>1440</ttl>
         <webMaster>puppygirlstink@gmail.com (puppygirlstink)</webMaster>
         <lastBuildDate>
-            Wed, 05 Feb 2025 01:59:46 +0000
+            Thu, 06 Feb 2025 11:05:21 +0000
         </lastBuildDate>
         <language>en-us</language>
 <!-- RFC 2822 timestamp https://timestampgenerator.com/ -->
@@ -61,12 +61,30 @@
     </pubDate>
 </item>
 
+<item>
+    <guid>https://puppygirlstink.github.io/blog/20250205.html</guid>
+    <title>i forgor</title>
+    <description>
+    <![CDATA[
+<br>
+        today i forgot to write a blog post lol<br><br>
+
+        been playing studio system, got stuck on room 105 puzzle lol<br><br>
+
+    ]]>
+    </description>
+    <link>https://puppygirlstink.github.io/blog/20250205.html</link>
+    <pubDate>
+        Thu, 06 Feb 2025 11:05:21 +0000
+    </pubDate>
+</item>
+
 <!--
 
 example post
 
 <item>
-    <guid>https://puppygirlstink.github.io/blog/20250203.html</guid>
+    <guid>https://puppygirlstink.github.io/blog/--------.html</guid>
     <title>blog!!!</title>
     <description>
     <![CDATA[
@@ -79,9 +97,9 @@ example post
 
     ]]>
     </description>
-    <link>https://puppygirlstink.github.io/blog/20250203.html</link>
+    <link>https://puppygirlstink.github.io/blog/--------.html</link>
     <pubDate>
-        Mon, 03 Feb 2025 23:23:33 +0000
+        ---, -- --- 2025 --:--:-- +0000
     </pubDate>
 </item>
 -->
