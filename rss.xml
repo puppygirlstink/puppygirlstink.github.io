@@ -101,30 +101,5 @@
     </pubDate>
 </item>
 
-<!--
-
-example post
-
-<item>
-    <guid>https://puppygirlstink.github.io/blog/.........html</guid>
-    <title>blog!!!</title>
-    <description>
-    <![CDATA[
-<br>
-        hey guys, ive decided to make this blog because i have nothing better to do. i'm not really sure what it's going to really be, but i guess thats how my brain works so in that regard this is perfect.<br><br>
-
-        im kinda fucking stupid! so this probably won't be very good.<br><br> 
-
-        do you fuck with it... >< ?<br><br>
-
-    ]]>
-    </description>
-    <link>https://puppygirlstink.github.io/blog/.........html</link>
-    <pubDate>
-        ..., .. Feb 2025 ..:..:.. +0000
-    </pubDate>
-</item>
--->
-
     </channel>
 </rss>
