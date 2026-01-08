@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=480, initial-scale=1">
+    <meta charset="utf-8">
+    <title>media - puppygirlstink</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <a class="flicker hideprojects pagelabel" href="index">> back</a>
+    <div class="flicker centertop" style="animation-delay: 0.4s">
+        <h1>media</h1>
+        <div class="indent gray" id="time" class="time"></div>
+    </div>
+
+<div class="static center box" style="animation-delay: 0.8s">
+<div class="flicker" style="animation-delay: 0.8s">
+
+        <h2 class="indent"><a href="https://anilist.co/user/puppygirlstink/" target="_blank">anilist!!</a></h2>
+        <p class="doubleindent gray">allll my manga and anime and stuff</p>
+
+        <h2 class="indent"><a href="https://myfigurecollection.net/profile/puppygirlstink" target="_blank">myfigurecollection</a></h2>
+        <p class="doubleindent gray">just a buncha my stuff</p>
+
+        <!--<h2 class="indent"><a href="https://open.spotify.com/user/ymq4zmab48s8kl967ym372vqu?si=37872893c3c2423c" target="_blank">spotify</a></h2>
+        <p class="doubleindent gray">user profile not artist profile</p>
+
+        <h2 class="indent"><a href="https://github.com/puppygirlstink" target="_blank">github</a></h2>
+        <p class="doubleindent gray">code ing</p>
+
+                
+        <h2 class="indent"><a href="https://www.instagram.com/puppygirlstink" target="_blank">instagram</a></h2>
+        <p class="doubleindent gray">i dont really use it but i have one i guess</p>-->
+               
+</div>
+
+<script>
+    function updateTime() {
+        const options = { 
+            timeZone: 'Europe/London', 
+            hour: '2-digit', 
+            minute: '2-digit', 
+            hour12: false
+        };
+        const timeString = new Date().toLocaleString('en-US', options);
+        document.getElementById('time').textContent = timeString;
+    }
+
+    
+    setInterval(updateTime, 1000);
+    updateTime(); 
+</script>
+
+</body>
+</html>
