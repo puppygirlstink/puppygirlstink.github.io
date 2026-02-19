@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=480, initial-scale=1">
+    <meta charset="utf-8">
+    <title>about - puppygirlstink</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    
+    <a class="flicker hideprojects pagelabel" href="index">> back</a>
+    <div class="flicker centertop" style="animation-delay: 0.4s">
+        <h1>ward</h1>
+        <div class="indent gray" id="time" class="time"></div>
+    </div>
+    
+    <div class="flicker center">
+
+        <p class="flicker" style="animation-delay: 0.7s">if you are reading this, i am currently in the psych ward :(</p>
+        <p class="flicker" style="animation-delay: 0.7s">i will be taken there on 20th of February 2026 at 10:45 GMT</p>
+<br>
+        <p class="flicker" style="animation-delay: 0.7s">FAQ:</p>
+        
+                <ul class="flicker" style="animation-delay: 0.7s">
+                    <li>"how will you be in there?" approx 1-2 weeks, max 28 days</li>
+                    <br>
+                    <li>"will you give updates?" i will try to give frequent updates on my twitter if possible (@girlstench)</li>
+                    <br>
+                    <li>"can i contact you?" they will most likely be taking away my phone, i have asked and they say they will do a risk assessment to determine what i can and cannot have. i will have a dumb phone and will try to put the number on twitter if possible but we will see.</li>
+                    <br>
+                    <li>"are you seeing it as positive?" i am seeing it negatively as if they take my phone i will be isolated from my friends. if i am allowed my phone then i could see it doing some good until my pills start working. otherwise i think it will make everything a lot worse by isolating me.</li>
+                </ul>
+                <br>
+                <p class="flicker" style="animation-delay: 0.8s">any other questions dm me on discord or twitter, wish me luck o7</p>
+            </div>
+
+        <div class="badge-grid pixel">
+             <!-- <a href="[link]"><img title="[title]" src="[image]"></a> -->
+        </div>
+
+        <script>
+            function updateTime() {
+                const options = { 
+                    timeZone: 'Europe/London', 
+                    hour: '2-digit', 
+                    minute: '2-digit', 
+                    hour12: false
+                };
+                const timeString = new Date().toLocaleString('en-US', options);
+                document.getElementById('time').textContent = timeString;
+            }
+    
+            
+            setInterval(updateTime, 1000);
+            updateTime(); 
+        </script>
+</body>
+</html>
