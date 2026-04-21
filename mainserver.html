@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=480, initial-scale=1">
+    <meta charset="utf-8">
+    <title>main server - puppygirlstink</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    
+    <a class="flicker hideprojects pagelabel" href="index">> back</a>
+    <div class="flicker centertop" style="animation-delay: 0.4s">
+        <h1>main server</h1>
+        <div class="indent gray" id="time" class="time"></div>
+    </div>
+    
+    
+    <div class="flicker" 
+        <p class="flicker" style="animation-delay: 0.7s"></p>
+
+        <h3>hardware</h3>
+        it has:
+        <li>an Intel Xeon E3-1220 v5 @ 3.5ghz</li><br>
+        <li>4gb (i know) ddr3</li><br>
+        <li>2x IBM 49Y6210 - 4TB 7.2K 6Gbps NL SAS 3.5 G2HS HDD (Renewed)</li>
+        they were on a really good sale on amazon and only ended up costing £39.98 for both ^_^<br>
+        i have them running in a RAID 1 configuration<br><br>
+        
+        <h3>software</h3>
+        it currently runs Ubuntu Server LTS with CasaOS (i know)<br>
+        i currently use it to self host:
+        <li>Immich (Google Photos Alternative)</li>
+        this is the main reason i got a server in the first place<br>
+        it was cheaper to do all of this than pay my stupid google photos that was full and stupid and i hate it<br><br>
+
+        <li>Jellyfin and Plex</li>
+        why both?<br>
+        ummmm because jellyfin better but to use my 5.1 surround setup<br>
+        i need to use the plex app on PS4 to get optical out cause my tv sucks<br>
+        blahhhh idc it works so lalalala<br><br>
+
+        <li>an arr stack</li>
+        qBittorrent (torrenting duh)<br>
+        Sonarr (shows)<br>
+        Radarr (movies)<br>
+        Prowlarr (actually finding stuff to torrent)<br>
+        Bazarr (subtitles)<br>
+        yaaarghhh<br><br>
+
+        <li>other stuff</li>
+        Jellyseerr (i barely use it its just useful if i want to let other people use my server)<br>
+        Syncthing (i used to have my shows and movies on my pc as well and automatically sync<br>
+        but now i dont so idk why i still have it)<br>
+        Ngnix Proxy Manager<br>
+        OpenSpeedTest<br><br>
+        
+        do you fuck with it... ?<br><br>
+<hr>
+    </div>
+
+
+        <div class="badge-grid pixel">
+             <!-- <a href="[link]"><img title="[title]" src="[image]"></a> -->
+        </div>
+
+        <script>
+            function updateTime() {
+                const options = { 
+                    timeZone: 'Europe/London', 
+                    hour: '2-digit', 
+                    minute: '2-digit', 
+                    second: '2-digit',
+                    hour12: false
+                };
+                const timeString = new Date().toLocaleString('en-US', options);
+                document.getElementById('time').textContent = timeString;
+            }
+    
+            
+            setInterval(updateTime, 1000);
+            updateTime(); 
+        </script>
+</body>
+</html>
