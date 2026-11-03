@@ -382,6 +382,16 @@ a:hover {
     color: var(--muted);
 }
 
+.updates a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.updates a:hover {
+    color: var(--red);
+    text-decoration: underline wavy rgba(200, 50, 60, 0.4);
+}
+
 /* right: main panel */
 
 #main {

@@ -23,6 +23,9 @@ const UPDATES = [
     ['26/04/18', 'server rack is on the floor now'],
 ];
 
+// clicking an update opens the commit history on github
+const COMMITS_URL = 'https://github.com/puppygirlstink/puppygirlstink.github.io/commits/main';
+
 const here = location.pathname.split('/').pop().replace('.html', '') || 'index';
 
 function navLinks(list) {
@@ -59,7 +62,7 @@ document.getElementById('side').innerHTML = `
     </div>
     <div class="updates-head">updates</div>
     <ul class="updates">
-        ${UPDATES.map(([d, t]) => `<li>${t} <span class="date">[${d}]</span></li>`).join('')}
+        ${UPDATES.map(([d, t]) => `<li><a href="${COMMITS_URL}" target="_blank" title="see all commits on github">${t} <span class="date">[${d}]</span></a></li>`).join('')}
     </ul>
 `;
 
