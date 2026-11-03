@@ -60,7 +60,7 @@ a:hover {
     margin: 0 auto;
     background: var(--cream);
     box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.35);
-    min-height: 100vh;
+    min-height: calc(100vh / var(--zoom, 1));
     display: grid;
     grid-template-columns: 250px minmax(0, 1fr);
     grid-template-rows: auto 1fr auto;
@@ -583,5 +583,45 @@ a:hover {
 
     .sheet {
         padding-left: 48px;
+    }
+}
+
+/* ---------- big screens ---------- */
+/* scale everything up so 1440p / ultrawide / 4k don't get a tiny column in the middle */
+
+@media (min-width: 1600px) and (min-height: 850px) {
+    :root {
+        --zoom: 1.2;
+    }
+
+    body {
+        zoom: var(--zoom);
+    }
+
+    #wrapper {
+        width: 900px;
+    }
+}
+
+@media (min-width: 2200px) and (min-height: 1300px) {
+    :root {
+        --zoom: 1.5;
+    }
+
+    #wrapper {
+        width: 1000px;
+    }
+}
+
+/* ultrawides get a wider column too */
+@media (min-width: 2200px) and (min-height: 1300px) and (min-aspect-ratio: 2/1) {
+    #wrapper {
+        width: 1200px;
+    }
+}
+
+@media (min-width: 3200px) and (min-height: 1900px) {
+    :root {
+        --zoom: 2;
     }
 }
