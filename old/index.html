@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=480, initial-scale=1">
+    <meta charset="utf-8">
+    <title>puppygirlstink</title>
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <script>setTimeout(function () { document.getElementById('home').classList.remove("hidden") }, 1300);</script>
+
+    <input type="checkbox" class="hidden" id="me-checkbox">
+    <input type="checkbox" class="hidden" id="socials-checkbox">
+    <input type="checkbox" class="hidden" id="systems-checkbox">
+    <input type="checkbox" class="hidden" id="badge-checkbox">
+
+    <div class="spread center box">
+        <div class="hidden" id="home">
+            <div class="flicker" style="animation-delay: 0.2s">
+                <h1>puppygirlstink</h1>
+                <p class="indent gray">just a girl</p>
+<br>
+<p class="indent gray">my current time</p>
+
+                <div class="indent gray" id="time" class="time"></div>
+            </div>
+
+            <div class="flicker indent" style="animation-delay: 0.4s">
+                <a class="showme homelabel" href="me">> me</a>
+            </div>
+            <div class="flicker indent" style="animation-delay: 0.8s">
+                <a class="showsocials homelabel" href="socials">> socials</a>
+            </div>
+            <div class="flicker indent" style="animation-delay: 1.2s">
+                <a class="showmusic homelabel" href="music">> music</a>
+            </div>
+            <div class="flicker indent" style="animation-delay: 1.4s">
+                <a class="showmedia homelabel" href="media">> media</a>
+            </div>
+            <div class="flicker indent" style="animation-delay: 1.6s">
+                <a class="showthrone homelabel" href="gifts">> gimmie stuff..</a>
+            </div>         
+
+            <div class="flicker indent" style="animation-delay: 1.7s">
+                <a class="showblog homelabel" href="rack">> server rack</a>
+            </div>
+
+
+            <h3 class="flicker bottom" style="animation-delay: 1.6s">contact ~ <a href="mailto:lexi@puppybit.ch">email</a></h3>
+        </div>
+
+        <script>
+            function updateTime() {
+                const options = { 
+                    timeZone: 'Europe/London', 
+                    hour: '2-digit', 
+                    minute: '2-digit', 
+                    second: '2-digit',
+                    hour12: false
+                };
+                const timeString = new Date().toLocaleString('en-US', options);
+                document.getElementById('time').textContent = timeString;
+            }
+    
+            
+            setInterval(updateTime, 1000);
+            updateTime(); 
+        </script>
+
+</body>

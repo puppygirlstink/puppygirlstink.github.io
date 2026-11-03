@@ -64,7 +64,7 @@ document.getElementById('side').innerHTML = `
 `;
 
 document.getElementById('footer').innerHTML =
-    'puppygirlstink ~ <a href="mailto:lexi@puppybit.ch">lexi@puppybit.ch</a> ~ please do not steal my stinky website';
+    'puppygirlstink ~ <a href="mailto:lexi@puppybit.ch">lexi@puppybit.ch</a> ~ <a href="old/">old site</a> ~ please do not steal my stinky website';
 
 function updateTime() {
     const el = document.getElementById('time');
