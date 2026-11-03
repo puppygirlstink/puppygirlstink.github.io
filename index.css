@@ -314,7 +314,6 @@ a:hover {
     height: 72px;
     border: 3px solid #fff;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
-    image-rendering: pixelated;
     transform: rotate(3deg);
 }
 
@@ -468,7 +467,6 @@ a:hover {
     width: 140px;
     height: 140px;
     transform: translateX(-50%) rotate(-3deg);
-    image-rendering: pixelated;
     border: 5px solid #fff;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
 }

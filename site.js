@@ -15,16 +15,18 @@ const NAV_BOTTOM = [
 ];
 
 // newest first ~ add a line when you change something
+// the last bit is the commit hash it links to (copy it from github, the short one works too)
 const UPDATES = [
-    ['26/11/03', 'site got a new look!! ☀'],
-    ['26/11/03', 'added email + changed twitter username'],
-    ['26/05/06', 'socials rearranged'],
-    ['26/04/21', 'server rack page: 2 more servers + pricing'],
-    ['26/04/18', 'server rack is on the floor now'],
+    ['26/11/03', 'site got a new look!! ☀', 'd7aa99a'],
+    ['26/11/03', 'added email + changed twitter username', 'bde559c'],
+    ['26/05/06', 'socials rearranged', 'fb85bc8'],
+    ['26/04/21', 'server rack page: 2 more servers + pricing', '439c2e7'],
+    ['26/04/18', 'server rack is on the floor now', 'e6d3ed3'],
 ];
 
-// clicking an update opens the commit history on github
-const COMMITS_URL = 'https://github.com/puppygirlstink/puppygirlstink.github.io/commits/main';
+// clicking an update opens that commit on github (or the whole history if there's no hash)
+const REPO_URL = 'https://github.com/puppygirlstink/puppygirlstink.github.io';
+const commitUrl = (sha) => (sha ? `${REPO_URL}/commit/${sha}` : `${REPO_URL}/commits/main`);
 
 const here = location.pathname.split('/').pop().replace('.html', '') || 'index';
 
@@ -49,7 +51,7 @@ document.getElementById('header').innerHTML = `
 document.getElementById('side').innerHTML = `
     <div class="note">
         <div class="pfp-row">
-            <img class="pfp" src="images/pfpsmol.png" alt="lexi">
+            <img class="pfp" src="images/pfp.webp" alt="lexi">
             <div>
                 <p class="note-title">hi!!</p>
                 <p class="small">just a girl</p>
@@ -62,7 +64,7 @@ document.getElementById('side').innerHTML = `
     </div>
     <div class="updates-head">updates</div>
     <ul class="updates">
-        ${UPDATES.map(([d, t]) => `<li><a href="${COMMITS_URL}" target="_blank" title="see all commits on github">${t} <span class="date">[${d}]</span></a></li>`).join('')}
+        ${UPDATES.map(([d, t, sha]) => `<li><a href="${commitUrl(sha)}" target="_blank" title="see this on github">${t} <span class="date">[${d}]</span></a></li>`).join('')}
     </ul>
 `;
 
