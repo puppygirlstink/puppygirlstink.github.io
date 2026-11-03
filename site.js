@@ -18,7 +18,7 @@ const NAV_BOTTOM = [
 // newest first ~ add a line when you change something
 // the last bit is the commit hash it links to (copy it from github, the short one works too)
 const UPDATES = [
-    ['26/11/03', 'site got a new look!! ☀', 'd7aa99a'],
+    ['03/11/26', 'site got a new look!! ☀', 'd7aa99a'],
 ];
 
 // clicking an update opens that commit on github (or the whole history if there's no hash)
