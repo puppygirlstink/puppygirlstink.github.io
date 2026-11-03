@@ -1,14 +1,12 @@
 // shared header / sidebar / footer for every page
 // edit the nav or the "updates" list here and it changes everywhere
 
-const NAV_TOP = [
+const NAV = [
+    ['./', 'home'],
     ['me', 'me'],
     ['socials', 'socials'],
     ['music', 'music'],
     ['media', 'media'],
-];
-
-const NAV_BOTTOM = [
     ['gifts', 'gimmie stuff..'],
     ['rack', 'server rack'],
     ['mailto:lexi@puppybit.ch', 'email'],
@@ -28,20 +26,17 @@ const here = location.pathname.split('/').pop().replace('.html', '') || 'index';
 
 function navLinks(list) {
     return list
-        .map(([href, label]) => `<a href="${href}"${href === here ? ' class="here"' : ''}>${label}</a>`)
+        .map(([href, label]) => {
+            const current = href === here || (href === './' && here === 'index');
+            return `<a href="${href}"${current ? ' class="here"' : ''}>${label}</a>`;
+        })
         .join('');
 }
 
 document.getElementById('header').innerHTML = `
-    <a id="logo" href="./" title="home">
-        <span class="logo-small">puppy girl</span>
-        <span class="logo-big">puppygirl<span>stink</span></span>
-    </a>
     <nav id="nav">
-        <div class="nav-row">${navLinks(NAV_TOP)}</div>
-        <div class="nav-row">${navLinks(NAV_BOTTOM)}</div>
+        <div class="nav-row">${navLinks(NAV)}</div>
     </nav>
-    <a id="top-btn" href="./" title="home">TOP</a>
 `;
 
 document.getElementById('side').innerHTML = `
@@ -58,10 +53,12 @@ document.getElementById('side').innerHTML = `
         <p class="small">my current time (england)</p>
         <p class="clock" id="time">--:--:--</p>
     </div>
-    <div class="updates-head">updates</div>
-    <ul class="updates">
-        ${UPDATES.map(([d, t, sha]) => `<li><a href="${commitUrl(sha)}" target="_blank" title="see this on github">${t} <span class="date">[${d}]</span></a></li>`).join('')}
-    </ul>
+    <div class="updates-box">
+        <div class="updates-head">updates</div>
+        <ul class="updates">
+            ${UPDATES.map(([d, t, sha]) => `<li><a href="${commitUrl(sha)}" target="_blank" title="see this on github">${t} <span class="date">[${d}]</span></a></li>`).join('')}
+        </ul>
+    </div>
 `;
 
 document.getElementById('footer').innerHTML =
