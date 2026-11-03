@@ -1,12 +1,15 @@
 // shared header / sidebar / footer for every page
 // edit the nav or the "updates" list here and it changes everywhere
 
-const NAV = [
+const NAV_TOP = [
     ['./', 'home'],
     ['me', 'me'],
     ['socials', 'socials'],
     ['music', 'music'],
     ['media', 'media'],
+];
+
+const NAV_BOTTOM = [
     ['gifts', 'gimmie stuff..'],
     ['rack', 'server rack'],
     ['mailto:lexi@puppybit.ch', 'email'],
@@ -35,7 +38,8 @@ function navLinks(list) {
 
 document.getElementById('header').innerHTML = `
     <nav id="nav">
-        <div class="nav-row">${navLinks(NAV)}</div>
+        <div class="nav-row">${navLinks(NAV_TOP)}</div>
+        <div class="nav-row">${navLinks(NAV_BOTTOM)}</div>
     </nav>
 `;
 
@@ -53,12 +57,10 @@ document.getElementById('side').innerHTML = `
         <p class="small">my current time (england)</p>
         <p class="clock" id="time">--:--:--</p>
     </div>
-    <div class="updates-box">
-        <div class="updates-head">updates</div>
-        <ul class="updates">
-            ${UPDATES.map(([d, t, sha]) => `<li><a href="${commitUrl(sha)}" target="_blank" title="see this on github">${t} <span class="date">[${d}]</span></a></li>`).join('')}
-        </ul>
-    </div>
+    <div class="updates-head">updates</div>
+    <ul class="updates">
+        ${UPDATES.map(([d, t, sha]) => `<li><a href="${commitUrl(sha)}" target="_blank" title="see this on github">${t} <span class="date">[${d}]</span></a></li>`).join('')}
+    </ul>
 `;
 
 document.getElementById('footer').innerHTML =
