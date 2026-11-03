@@ -2,70 +2,39 @@
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=480, initial-scale=1">
     <meta charset="utf-8">
-    <title>gifts - puppygirlstink</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>gimmie stuff.. - puppygirlstink</title>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+    <div id="wrapper">
+        <header id="header"></header>
 
-    <a class="flicker hideprojects pagelabel" href="index">> back</a>
-    <div class="flicker centertop" style="animation-delay: 0.4s">
-        <h1>gimmie stuff..</h1>
-        <div class="indent gray" id="time" class="time"></div>
+        <div id="columns">
+            <aside id="side"></aside>
+
+            <main id="main">
+                <div class="sheet">
+                    <h1 class="page-title">gimmie stuff..</h1>
+                    <ul class="links">
+                        <li><a href="https://paypal.me/puppygirlstink" target="_blank">paypal</a><span class="desc">real money!!! yay!!</span></li>
+                        <li><a href="https://ko-fi.com/puppygirlstink" target="_blank">ko-fi</a><span class="desc">other different real money!! double yay!!</span></li>
+                        <li><a href="https://throne.com/puppygirlstink" target="_blank">throne</a><span class="desc">gay stupid idiot dumb</span></li>
+                        <li><a href="https://store.steampowered.com/wishlist/id/puppygirlstink/?sort=dateadded" target="_blank">steam wishlist!!</a><span class="desc">mmm gamign games yes im a gamer i play videogame yes.. probably sort by date added.. it makes sense!!</span></li>
+                        <li><a href="https://steamcommunity.com/tradeoffer/new/?partner=1151516482&amp;token=CWCcj2zW" target="_blank">steam trade!!</a><span class="desc">gimmie steam items yay yay</span></li>
+                        <li><a href="https://www.discordapp.com/users/505764324690755598" target="_blank">anything else!!!!</a><span class="desc">message me on discord about it!! link goes to my profile but my username is puppygirlstink also</span></li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+
+        <footer id="footer"></footer>
     </div>
 
-<div class="static center box" style="animation-delay: 0.8s">
-<div class="flicker" style="animation-delay: 0.8s">
-
-        <h2 class="indent"><a href="https://paypal.me/puppygirlstink" target="_blank">paypal</a></h2>
-        <p class="doubleindent gray">real money!!! yay!!</p>
-
-        <h2 class="indent"><a href="https://ko-fi.com/puppygirlstink" target="_blank">ko-fi</a></h2>
-        <p class="doubleindent gray">other different real money!! double yay!!</p>
-
-        <h2 class="indent"><a href="https://throne.com/puppygirlstink" target="_blank">throne</a></h2>
-        <p class="doubleindent gray">gay stupid idiot dumb</p>
-
-        <h2 class="indent"><a href="https://store.steampowered.com/wishlist/id/puppygirlstink/?sort=dateadded" target="_blank">steam wishlist!!</a></h2>
-        <p class="doubleindent gray">mmm gamign games yes im a gamer i play videogame yes.. probably sort by date added.. it makes sense!!</p>
-
-        <h2 class="indent"><a href="https://steamcommunity.com/tradeoffer/new/?partner=1151516482&token=CWCcj2zW" target="_blank">steam trade!!</a></h2>
-        <p class="doubleindent gray">gimmie steam items yay yay</p>
-                
-        <h2 class="indent"><a href="https://www.discordapp.com/users/505764324690755598" target="_blank">anything else!!!!</a></h2>
-        <p class="doubleindent gray">message me on discord about it!! link goes to my profile but my username is puppygirlstink also</p>
-
-        <!--<h2 class="indent"><a href="https://open.spotify.com/user/ymq4zmab48s8kl967ym372vqu?si=37872893c3c2423c" target="_blank">spotify</a></h2>
-        <p class="doubleindent gray">user profile not artist profile</p>
-
-        <h2 class="indent"><a href="https://github.com/puppygirlstink" target="_blank">github</a></h2>
-        <p class="doubleindent gray">code ing</p>
-
-                
-        <h2 class="indent"><a href="https://www.instagram.com/puppygirlstink" target="_blank">instagram</a></h2>
-        <p class="doubleindent gray">i dont really use it but i have one i guess</p>-->
-               
-</div>
-
-<script>
-    function updateTime() {
-        const options = { 
-            timeZone: 'Europe/London', 
-            hour: '2-digit', 
-            minute: '2-digit', 
-            hour12: false
-        };
-        const timeString = new Date().toLocaleString('en-US', options);
-        document.getElementById('time').textContent = timeString;
-    }
-
-    
-    setInterval(updateTime, 1000);
-    updateTime(); 
-</script>
-
+    <script src="site.js"></script>
 </body>
+
 </html>

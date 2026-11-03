@@ -2,68 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=480, initial-scale=1">
     <meta charset="utf-8">
-    <title>about - puppygirlstink</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>me - puppygirlstink</title>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    
-    <a class="flicker hideprojects pagelabel" href="index">> back</a>
-    <div class="flicker centertop" style="animation-delay: 0.4s">
-        <h1>me</h1>
-        <div class="indent gray" id="time" class="time"></div>
+    <div id="wrapper">
+        <header id="header"></header>
+
+        <div id="columns">
+            <aside id="side"></aside>
+
+            <main id="main">
+                <div class="sheet">
+                    <h1 class="page-title">me</h1>
+                    <p>i am lexi and i like to wear cute dresses, i also make things sometimes!!</p>
+                    <p>it's hard to describe myself so i'm not going to try, okay?</p>
+
+                    <h3>the main usernames:</h3>
+                    <ul>
+                        <li>puppygirlstink (obviously)</li>
+                        <li>maidlesbian (main twitter rn)</li>
+                    </ul>
+
+                    <h3>the random other old ones:</h3>
+                    <ul>
+                        <li>lainshawty (priv)</li>
+                        <li>girlstench (suspended twitter)</li>
+                        <li>pawbong (suspended twitter)</li>
+                        <li>pupaimer (suspended twitter)</li>
+                        <li>puppygirlsniff (suspended twitter)</li>
+                        <li>stinkypuppygirl (suspended twitter)</li>
+                    </ul>
+
+                    <p>im am moè</p>
+                </div>
+            </main>
+        </div>
+
+        <footer id="footer"></footer>
     </div>
-    
-    <div class="flicker center">
-        <div class="flicker imagediv" style="animation-delay: 0.6s">
-            <div id="time" class="time"></div>
-            <img class="pixel centertop" title="pfpsmol" src="./images/pfpsmol.png">
-        </div>
-        <br>
 
-        <p class="flicker" style="animation-delay: 0.7s">i am lexi and i like to wear cute dresses, i also make things sometimes!!</p>
-        <p class="flicker" style="animation-delay: 0.7s">it's hard to describe myself so i'm not going to try, okay?</p>
-
-        <p class="flicker" style="animation-delay: 0.7s">the main usernames:</p>
-                <ul class="flicker" style="animation-delay: 0.7s">
-                    <li>puppygirlstink (obviously)</li>
-                    <li>maidlesbian (main twitter rn)</li>
-                </ul>
-                <p class="flicker" style="animation-delay: 0.7s">the random other old ones:</p>
-                <ul class="flicker" style="animation-delay: 0.7s">
-                    <li>lainshawty (priv)</li>
-                    <li>girlstench (suspended twitter)</li>
-                    <li>pawbong (suspended twitter)</li>
-                    <li>pupaimer (suspended twitter)</li>
-                    <li>puppygirlsniff (suspended twitter)</li>
-                    <li>stinkypuppygirl (suspended twitter)</li>
-                </ul>
-                <br>
-                <p class="flicker" style="animation-delay: 0.8s">im am moè</p>
-            </div>
-
-        <div class="badge-grid pixel">
-             <!-- <a href="[link]"><img title="[title]" src="[image]"></a> -->
-        </div>
-
-        <script>
-            function updateTime() {
-                const options = { 
-                    timeZone: 'Europe/London', 
-                    hour: '2-digit', 
-                    minute: '2-digit', 
-                    hour12: false
-                };
-                const timeString = new Date().toLocaleString('en-US', options);
-                document.getElementById('time').textContent = timeString;
-            }
-    
-            
-            setInterval(updateTime, 1000);
-            updateTime(); 
-        </script>
+    <script src="site.js"></script>
 </body>
+
 </html>

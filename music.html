@@ -2,66 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=480, initial-scale=1">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>music - puppygirlstink</title>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+    <div id="wrapper">
+        <header id="header"></header>
 
-    <a class="flicker hideprojects pagelabel" href="index">> back</a>
-    <div class="flicker centertop" style="animation-delay: 0.4s">
-        <h1>music</h1>
-        <div class="indent gray" id="time" class="time"></div>
+        <div id="columns">
+            <aside id="side"></aside>
+
+            <main id="main">
+                <div class="sheet">
+                    <h1 class="page-title">music</h1>
+                    <ul class="links">
+                        <li><a href="https://open.spotify.com/artist/2qEztwiCEoSuzaXRmtVJYH?si=08gJ67bfS16hPU1XC5bc0A" target="_blank">spotify</a><span class="desc">"the one good streaming service"</span></li>
+                        <li><a href="https://puppygirlstink.bandcamp.com" target="_blank">bandcamp</a><span class="desc">highest quality (and a way to give me money)</span></li>
+                        <li><a href="https://soundcloud.com/puppygirlstink" target="_blank">soundcloud</a><span class="desc">sound cloud</span></li>
+                        <li><a href="https://music.amazon.co.uk/artists/B0CNS39MH4/" target="_blank">amazon music</a><span class="desc">bezos fm</span></li>
+                        <li><a href="https://music.apple.com/us/artist/puppygirlstink/1717612913" target="_blank">apple music</a><span class="desc">it's ass i fear</span></li>
+                        <li><a href="https://music.youtube.com/channel/UCfl4nO6x7CfozYkijP117gQ" target="_blank">youtube music</a><span class="desc">yeahhh</span></li>
+                        <li><a href="https://www.deezer.com/en/artist/244121542" target="_blank">deezer</a><span class="desc">cuz why not</span></li>
+                        <li><a href="">napster, tidal, pandora &amp; qobuz</a><span class="desc">i dont have a subscription so i cant link but trust me</span></li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+
+        <footer id="footer"></footer>
     </div>
 
-<div class="static center box" style="animation-delay: 0.8s">
-<div class="flicker" style="animation-delay: 1.0s">
-
-        <h2 class="indent"><a href="https://open.spotify.com/artist/2qEztwiCEoSuzaXRmtVJYH?si=08gJ67bfS16hPU1XC5bc0A" target="_blank">spotify</a></h2>
-        <p class="doubleindent gray">"the one good streaming service"</p>
-
-        <h2 class="indent"><a href="https://puppygirlstink.bandcamp.com" target="_blank">bandcamp</a></h2>
-        <p class="doubleindent gray">highest quality (and a way to give me money)</p>
-
-        <h2 class="indent"><a href="https://soundcloud.com/puppygirlstink" target="_blank">soundcloud</a></h2>
-        <p class="doubleindent gray">sound cloud</p>
-
-        <h2 class="indent"><a href="https://music.amazon.co.uk/artists/B0CNS39MH4/" target="_blank">amazon music</a></h2>
-        <p class="doubleindent gray">bezos fm</p>
-
-        <h2 class="indent"><a href="https://music.apple.com/us/artist/puppygirlstink/1717612913" target="_blank">apple music</a></h2>
-        <p class="doubleindent gray">it's ass i fear</p>
-
-        <h2 class="indent"><a href="https://music.youtube.com/channel/UCfl4nO6x7CfozYkijP117gQ" target="_blank">youtube music</a></h2>
-        <p class="doubleindent gray">yeahhh</p>
-
-        <h2 class="indent"><a href="https://www.deezer.com/en/artist/244121542" target="_blank">deezer</a></h2>
-        <p class="doubleindent gray">cuz why not</p>
-
-        <h2 class="indent"><a href="">napster, tidal, pandora & qobuz</a></h2>
-        <p class="doubleindent gray">i dont have a subscription so i cant link but trust me</p>
-
-</div>
-
-<script>
-    function updateTime() {
-        const options = { 
-            timeZone: 'Europe/London', 
-            hour: '2-digit', 
-            minute: '2-digit', 
-            hour12: false
-        };
-        const timeString = new Date().toLocaleString('en-US', options);
-        document.getElementById('time').textContent = timeString;
-    }
-
-    
-    setInterval(updateTime, 1000);
-    updateTime(); 
-</script>
-
+    <script src="site.js"></script>
 </body>
+
 </html>
