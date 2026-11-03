@@ -18,10 +18,6 @@ const NAV_BOTTOM = [
 // the last bit is the commit hash it links to (copy it from github, the short one works too)
 const UPDATES = [
     ['26/11/03', 'site got a new look!! ☀', 'd7aa99a'],
-    ['26/11/03', 'added email + changed twitter username', 'bde559c'],
-    ['26/05/06', 'socials rearranged', 'fb85bc8'],
-    ['26/04/21', 'server rack page: 2 more servers + pricing', '439c2e7'],
-    ['26/04/18', 'server rack is on the floor now', 'e6d3ed3'],
 ];
 
 // clicking an update opens that commit on github (or the whole history if there's no hash)
@@ -53,13 +49,13 @@ document.getElementById('side').innerHTML = `
         <div class="pfp-row">
             <img class="pfp" src="images/pfp.webp" alt="lexi">
             <div>
-                <p class="note-title">hi!!</p>
+                <p class="note-title">lexi</p>
                 <p class="small">just a girl</p>
             </div>
         </div>
     </div>
     <div class="note blue tilt">
-        <p class="small">my current time (london)</p>
+        <p class="small">my current time (england)</p>
         <p class="clock" id="time">--:--:--</p>
     </div>
     <div class="updates-head">updates</div>
